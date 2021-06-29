@@ -1,0 +1,44 @@
+{
+  "name": "node-starter",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "description": "Node Starter Repo",
+  "private": true,
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --watch app",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manavm1990/node-starter"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Manav Misra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manavm1990/node-starter/issues"
+  },
+  "homepage": "https://github.com/manavm1990/node-starter#readme",
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-xo": "^0.37.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "nodemon": "^2.0.8",
+    "prettier": "^2.3.2"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js}": "prettier --write"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
